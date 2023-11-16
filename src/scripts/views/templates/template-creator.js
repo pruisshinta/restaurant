@@ -1,10 +1,12 @@
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const createRestaurantItemTemplate = (restaurant) => `
 <section class="restaurant-box">
 <a href="/#/detail/${restaurant.id}">
     <div class="poster">
-        <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
+        <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
         <h2 class="rating">⭐️${restaurant.rating}</h2>
     </div>
     <h2>${restaurant.name}</h2>

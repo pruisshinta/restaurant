@@ -5,7 +5,10 @@ const HomePage = {
   async render() {
     return `
     <article class="jumbotron">
-      <img class="jumbotron-img" src="./images/heros/hero-image_1.jpg" alt="pembuka web">
+      <picture>
+        <source media="(max-width: 600px)" srcset="./images/heros/hero-image_1.jpg">
+        <img class="jumbotron-img" src="./images/heros/hero-image_1.jpg" alt="pembuka web">
+      </picture>
     </article>
     <h2 class="title-name">Find Restaurant</h2>
     <article id="domain" class="list-restaurant">

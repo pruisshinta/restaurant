@@ -64,13 +64,22 @@ main {
   cursor: pointer;
 }
 
-.jumbotron {
+/* .jumbotron {
   max-height: 600px;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
-.jumbotron > .jumbotron-img {
+/* .jumbotron > .jumbotron-img {
+  display: flex;
+  transition: transform 1s ease;
+  width: 100%;
+} */
+
+picture img{
+  max-height: 600px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   transition: transform 1s ease;
   width: 100%;
