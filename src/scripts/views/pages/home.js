@@ -6,8 +6,8 @@ const HomePage = {
     return `
     <article class="jumbotron">
       <picture>
-        <source media="(max-width: 600px)" srcset="../../../dist/images/heros/hero-image_1-small.jpg">
-        <img class="jumbotron-img" src="../../../dist/images/heros/hero-image_1-large.jpg" alt="pembuka web">
+        <source media="(max-width: 600px)" srcset="./images/heros/hero-image_1-small.jpg">
+        <img class="jumbotron-img" src="./images/heros/hero-image_1-large.jpg" alt="pembuka web">
       </picture>
     </article>
     <h2 class="title-name">Find Restaurant</h2>
